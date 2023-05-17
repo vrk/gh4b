@@ -26,15 +26,5 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      - name: Make Request
-        id: myRequest
-        uses: fjogeleit/http-request-action@v1
-        with:
-          url: "https://dog.ceo/api/breeds/image/random"
-          method: 'GET'
-      - name: Show Response
-        run: |
-          echo ${{ steps.myRequest.outputs.response }}
-          echo ${{ steps.myRequest.outputs.headers }}
-          echo ${{ fromJson(steps.myRequest.outputs.response).message }}
-
+      - uses: actions/javascript-action@v1
+      - uses: stefanzweifel/git-auto-commit-action@v4
