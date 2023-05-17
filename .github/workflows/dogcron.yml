@@ -26,5 +26,5 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      - uses: vrk/gh4b-action@main
+      - uses: vrk/gh4b-action@v2
       - uses: stefanzweifel/git-auto-commit-action@v4
