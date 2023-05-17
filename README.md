@@ -1,6 +1,6 @@
 # gh4b
 
-a new dog every hour
+a new dog every hour at https://raw.githubusercontent.com/vrk/gh4b/main/dog.png
 
 ## thanks
 
